@@ -42,11 +42,14 @@ export default function Home() {
       <ul>
         {filteredArticles.map(article => (
           <li key={article.id}>
-            <h2>
-              <a href={article.url} target="_blank" rel="noopener noreferrer">
-                {article.title}
-              </a>
-            </h2>
+            
+              <h2>
+  <Link href={`/news/${article.id}`}>
+    {article.title}
+  </Link>
+</h2>
+
+            
             <p style={{
               display: 'inline-block',
               backgroundColor: '#1e40af',
