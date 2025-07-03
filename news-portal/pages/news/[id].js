@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import newsArticles from '../../newsdata';
 import Layout from '../../components/layout';
+import Link from 'next/link';
 
 export default function ArticlePage() {
   const router = useRouter();
@@ -30,7 +31,7 @@ export default function ArticlePage() {
       </p>
       <p>{article.content || article.summary || "No content available."}</p>
       <p>
-        <a href="/" style={{color:"#3b82f6"}}>← Back to Home</a>
+        <Link href="/" style={{color:"#3b82f6"}}>← Back to Home</Link>
       </p>
     </Layout>
   );
