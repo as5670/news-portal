@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Layout from '../components/layout';
-import newsArticles from '../newsdata'; // import your data
+import newsArticles from '../newsdata'; 
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState('All');
